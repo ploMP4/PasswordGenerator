@@ -41,7 +41,7 @@ class Application(tk.Frame):
         self.numbers["text"] = "1 2 3 4 5 6 7 8 9 0"
         self.numbers.grid(row=4, column=0, ipadx=40, ipady=2)
 
-        self.pl_label = tk.Label(self, text='Password length (5-20)')
+        self.pl_label = tk.Label(self, text='Password length (5-45)')
         self.pl_label.grid(row=5, column=0, ipadx=40)
 
         self.password_length = tk.Spinbox(self, from_=5.0, to=20.0)
@@ -73,6 +73,9 @@ class Application(tk.Frame):
 
         if len(self.generate) == 0:
             tk.messagebox.showerror("Password Generator", "Password cannot be empty")
+            return
+        elif int(self.password_length.get()) < 5 or int(self.password_length.get()) > 45:
+            tk.messagebox.showerror("Password Generator", "Password must be between 5-45 characters long")
             return
         else:
             self.password = random.choices(tuple(self.generate), k=int(self.password_length.get()))
