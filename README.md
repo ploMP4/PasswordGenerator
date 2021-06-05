@@ -4,8 +4,8 @@ Make sure you have tkinter installed on your machine then run the PasswordGen.py
 
  *Windows:*
  
- ```python PasswordGen.py```
+ #### ```python PasswordGen.py```
 
 *Linux:*
 
-```python3 PasswordGen.py```
+#### ```python3 PasswordGen.py```
