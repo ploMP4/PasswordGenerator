@@ -2,7 +2,7 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Make sure you have python and tkinter installed on your machine then run the PasswordGen.py file
+### Make sure you have python and tkinter installed on your machine then run the PasswordGen.py file
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
